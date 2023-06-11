@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mobile OTP Verification</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Mobile OTP Verification</h1>
+  <form id="verificationForm">
+    <label for="mobileNumber">Mobile Number:</label>
+    <input type="text" id="mobileNumber" maxlength="10" required><br><br>
+
+    <div id="otpInputContainer" style="display: none;">
+      <label for="otp">OTP:</label>
+      <input type="text" id="otp" maxlength="6" required><br><br>
+    </div>
+
+    <button type="button" id="sendOTPButton">Send OTP</button>
+    <button type="button" id="resendOTPButton" style="display: none;">Resend OTP</button>
+    <button type="button" id="verifyOTPButton" style="display: none;">Verify OTP</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
